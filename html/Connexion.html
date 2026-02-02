@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark"> 
+<head>
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drinkandcold - Connexion</title>
+    <!-- link -->
+     <link rel="stylesheet" href="../css/pico.classless.indigo.min.css">
+     <link rel="icon" href="../img/icone/360_F_695823409_EfMuGZeDX3PyImMtJ2gAzDcxINg8VkFz.jpg" type="image\x-icon">
+     
+
+</head>
+<body>
+    <header>
+         <nav>
+            <ul>
+                
+            </ul>
+            <ul>
+                <li><a href="index.html">Retour au menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="inscription.html"> Inscription</a></li>
+            </ul>
+        </nav>
+
+        <h1><strong><mark>DrinkandCold</mark></strong></h1>
+        <h4>Site crée par Nolan De Almeida</h4>
+        <i>Be Fraîche</i>
+        <hr>
+    </header>
+    <main>
+
+        <h2>Connectez - Vous !</h2>
+        <p><strong>Veuillez remplire les cases manquantes.</strong></p>
+    <form id="monFormulaire">
+        <fieldset>
+            <label for="email">Email </label>
+            <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                required placeholder="Entrez votre e-mail" 
+                autocomplete="email">
+
+
+            <label for="mot_de_passe">Mot de passe </label>
+            <input 
+                type="password"
+                id="mot_de_passe"
+                name="mot_de_passe" 
+                required placeholder="Entrez votre mot de passe" 
+                autocomplete="given-name">
+
+        </fieldset>
+        <input type="submit" value="Se connecter">
+    </form>
+
+    <div id="messageSucces" style="display:none; background: #d4edda; color: #155724; padding: 20px; margin-top: 20px; border-radius: 5px;">
+        Connection réussi.
+    </div>
+
+    <script>
+    document.getElementById('monFormulaire').addEventListener('submit', function(event) {
+     
+        event.preventDefault();
+
+    
+    this.style.display = 'none';
+
+    
+    document.getElementById('messageSucces').style.display = 'block';
+    });
+    </script>
+
+
+        <p><em>Vous n'avez pas de compte ?</em> Inscrivez - vous : <a href="inscription.html"> Inscription</a></p>
+
+    </main>
+
+    <footer>
+        <br> <br> 
+        <hr>
+
+        <strong>Classe :EM-IN 1A</strong> 
+        <p> Crée par Nolan De Almeida</p>
+        
+
+
+    </footer>
+</body>

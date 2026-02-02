@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark"> 
+<head>
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>drinkandcold - contact</title>
+    <!-- link -->
+     <link rel="stylesheet" href="../css/pico.classless.indigo.min.css">
+     <link rel="icon" href="../img/icone/360_F_695823409_EfMuGZeDX3PyImMtJ2gAzDcxINg8VkFz.jpg" type="image\x-icon">
+
+     
+
+</head>
+<body>
+    <header>
+         <nav>
+            <ul>
+                
+            </ul>
+            <ul>
+                <li><a href="index.html">Retour au menu</a></li>
+                <li><a href="politique_confidentialite.html">Politique de confidentialité</a></li>
+                <li><a href="inscription.html">Connexion / Inscription</a></li>
+            
+            </ul>
+        </nav>
+        <h1><strong><mark>DrinkandCold</mark></strong></h1>
+        <h4>Site crée par Nolan De Almeida</h4>
+        <i>Be Fraîche</i>
+        <hr>
+    </header>
+    <main >
+        <h2>Contact</h2>
+        <p><strong>Dites - nous tout, nous sommes à l'écoute !</strong></p>
+        <hr>
+
+    <form id="monFormulaire">
+    <fieldset>
+        <label for="prenom">Prénom *</label>
+        <input 
+            id="prenom"
+            name="prenom" 
+            required placeholder="Entrez votre prénom" 
+            autocomplete="given-name">
+        <label>
+        Nom
+        <input
+            name="nom"
+            placeholder="Entrez votre nom"
+            autocomplete="nom"
+        />
+        </label>
+
+        <label for="email">Email *</label>
+        <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            required placeholder="Entrez votre e-mail" 
+            autocomplete="email">
+        <label>
+        Téléphone
+        <input
+            name="Téléphone"
+            placeholder="Entrez votre numéro de téléphone"
+            autocomplete="telephone"
+        />
+        </label>    
+    </fieldset>
+    <textarea
+    name="Message"
+    placeholder="Ecrire le message..."
+    aria-label="Ecrire le message..."
+    ></textarea> 
+    
+    <input type="submit" value="Envoyer">
+    </form>
+
+    
+    <div id="messageSucces" style="display:none; background: #d4edda; color: #155724; padding: 20px; margin-top: 20px; border-radius: 5px;">
+        Merci ! Nous avons bien reçu ton message.
+    </div>
+
+    <script>
+    document.getElementById('monFormulaire').addEventListener('submit', function(event) {
+     
+        event.preventDefault();
+
+    
+    this.style.display = 'none';
+
+    
+    document.getElementById('messageSucces').style.display = 'block';
+    });
+    </script>
+    </main>
+        <footer>
+        <br> <br> 
+        <hr>
+
+        <strong>Classe :EM-IN 1A</strong> 
+        <p> Crée par Nolan De Almeida</p>
+        
+
+
+    </footer>
+</body>
