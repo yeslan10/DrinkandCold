@@ -6,72 +6,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>drinkandcold - Inscription</title>
     <!-- link -->
-     <link rel="stylesheet" href="../css/pico.classless.indigo.min.css">
+     <link rel="stylesheet" href="../css/pico.indigo.css">
+     <link rel="stylesheet" href="../css/style.css">
      <link rel="icon" href="../img/icone/360_F_695823409_EfMuGZeDX3PyImMtJ2gAzDcxINg8VkFz.jpg" type="image\x-icon">
      
 
 </head>
-<body>
-    <header>
+<body >
+    <!-- entête -->
+    <header class="container">
          <nav>
             <ul>
-                
+                <li><img src="../img/icone/390166.png" alt="icone" class="logo"></li>
             </ul>
             <ul>
-                <li><a href="index.html">Retour au menu</a></li>
+                <li><a href="../index.html">Retour au menu</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="Connexion.html">Connexion </a></li>
             </ul>
         </nav>
 
-        <h1><strong><mark>DrinkandCold</mark></strong></h1>
-        <h4>Site crée par Nolan De Almeida</h4>
+
+        <h1><strong>DrinkandCold</strong></h1>
+        <p><strong>Site créé par Nolan De Almeida</strong></p>
         <i>Be Fraîche</i>
         <hr>
+
+
     </header>
-    <main>
-        <h2>Inscription</h2>
+    <main class = "container">
+
+        <!-- titre -->
+        <h2 class="menu_princ">Inscription</h2>
         <p><strong>Veuillez remplire les cases manquantes.</strong></p>
         <hr>
+        <article id="formulaire_inscription">
+            <form action="">
+                <!-- Nom, prénom -->
 
-        <p>Insérer votre <u>Nom</u></p>
-        <input name="nom" placeholder="Nom" aria-label="nom" required>
-        <p>Insérer votre <u>Prénom</u></p>
-        <input name="prenom" placeholder="Prenom" aria-label="prenom" required>
+                <p>Nom :</p>
+                <input name="nom" placeholder="Insérer votre Nom" aria-label="nom" required>
+                <p>Prénom :</p>
+                <input name="prenom" placeholder="Insérer votre Prénom" aria-label="prenom" required>
+
+                <!-- date naissance, email -->
+
+                <p>Insérer votre <u>Date de naissance</u></p>
+                <input type="date" id="date_naissance" name="Date de naissance" aria-label="Date"required>
+                <div id="message_erreur_date"></div>
+                <p>Email :</p>
+                <input type="email" name="email" placeholder="Insérer votre Email" aria-label="email"required>
+
+                <!-- numéro tel, mot de passe -->
+
+                <p>Numéro de téléphone : (Facultatif)</p>
+                <input name="num_tel" placeholder="Insérer votre Numéro de téléphone" aria-label="num_tel" >
+                <p>Mot de passe :</p>
+                <input type="password" name="mot de passe" placeholder="Entrez votre mot de passe" aria-label="password" id="password_1" required>
+                <input type="password" name="password" placeholder="Confirmez votre mot de passe" aria-label="password" id="password_2" autocomplete="new-password"required>
+
+                <div id="message_erreur_password"></div>
+                <!-- case à cocher, à cliquer -->
+
+                <input type="checkbox" name="Je confirme avoir lu et accepté la politique de confidentialité. " required />
+                <label >Je confirme avoir lu et accepté la politique de confidentialité.</label> 
+                
+
+                <label > <input type="checkbox" name="J'accepte de recevoir des communications commerciales de la part de DrinkandCold " />
+                J'accepte de recevoir des communications commerciales de la part de DrinkandCold 
+                </label>  <br> <br>
+
+                <input type="submit" value="Inscrivez - vous !" >
+            </form>
+        </article>
+        <div class="messageSucces" id="messageSucces_inscription">
+            Inscription réussi.
+        </div>  
 
 
-        <p>Insérer votre <u>Date de naissance</u></p>
-        <input type="date" name="Date de naissance" aria-label="Date"required>
-        <p>Insérer votre <u>Email</u></p>
-        <input type="email" name="email" placeholder="Email" aria-label="email"required>
-
-
-        <p>Insérer votre <u>Numéro de téléphone</u></p>
-        <input name="num_tel" placeholder="Numéro de téléphone" aria-label="num_tel" >
-        <p>Insérer votre <u>Mot de passe</u></p>
-        <input type="password" name="mot de passe" placeholder="Entrez votre mot de passe" aria-label="password" required>
-        <input type="password" name="password" placeholder="Confirmez votre mot de passe" aria-label="password" autocomplete="new-password"required>
-
-
-        <label > <input type="checkbox" name="Je confirme avoir lu et accepté la politique de confidentialité. " required checked/>
-        Je confirme avoir lu et accepté la politique de confidentialité.
-        </label>
-        <label > <input type="checkbox" name="J'accepte de recevoir des communications commerciales de la part de DrinkandCold " checked/>
-        J'accepte de recevoir des communications commerciales de la part de DrinkandCold 
-        </label>  <br>
-        <input type="submit" value="Inscrivez - vous !" >
-
-
-        <p><em>Vous avez déjà un compte ?</em> Connectez - vous : <a href="Connexion.html"> Connexion</a></p>
+        <!-- page connexion -->
+        <p class="ins_connex"><em>Vous avez déjà un compte ?</em> Connectez - vous : <a href="Connexion.html"> Connexion</a></p>
     </main>
-    <footer>
-         
-        <hr>
-        <br> <br>
-        <strong>Classe :EM-IN 1A</strong> 
-        <p> Crée par Nolan De Almeida</p>
+    <!-- pied de page -->
+    <footer class="container">
         
-
-
+        <hr>
+        <strong>Classe :EM-IN 1A</strong> 
+        <p> Créé par Nolan De Almeida</p>
     </footer>
 </body>
+<script >
+
+
+
+    
+    formulaire_inscription.addEventListener("submit", function(event){
+        event.preventDefault();
+
+        let is_Valid = true;
+        
+
+        // formulaire inscription date
+
+        const date_naissance = new Date(document.getElementById("date_naissance").value);
+        const aujordhui = new Date();
+        const message_erreur_date = document.getElementById("message_erreur_date");
+
+        message_erreur_date.textContent = "";
+
+        if (date_naissance > aujordhui) {
+            message_erreur_date.style.color = "red";
+            message_erreur_date.textContent = "Vous ne pouvez pas dépassez la date actuelle."
+            message_erreur_date.style.marginBottom = "10px"
+            is_Valid = false
+        };
+
+        // formulaire inscription password
+
+        const formulaire_inscription = document.getElementById("formulaire_inscription");
+        const messageSucces_inscription = document.getElementById("messageSucces_inscription");
+        const password_1 = document.getElementById("password_1");
+        const password_2 = document.getElementById("password_2");
+        const message_erreur_password = document.getElementById("message_erreur_password");
+
+        message_erreur_password.textContent = "";
+
+        
+        if (password_1.value != password_2.value){
+            message_erreur_password.textContent = "Veuillez taper deux fois le même mot de passe."
+            message_erreur_password.style.color = "red";
+            message_erreur_password.style.marginBottom = "10px"
+            is_Valid = false        
+        };
+
+
+        // validation du formulaire
+        if (is_Valid){
+            formulaire_inscription.style.display = 'none';
+            messageSucces_inscription.style.display = 'block';
+        }; 
+    });
+
+</script>
+</html>
