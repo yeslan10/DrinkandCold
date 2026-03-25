@@ -4,63 +4,136 @@
         
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>drinkandcold - contact</title>
+    <title>drinkandcold - soda</title>
     <!-- link -->
-     <link rel="stylesheet" href="../css/pico.classless.indigo.min.css">
+     <link rel="stylesheet" href="../css/pico.indigo.css">
+     <link rel="stylesheet" href="../css/style.css">
      <link rel="icon" href="../img/icone/360_F_695823409_EfMuGZeDX3PyImMtJ2gAzDcxINg8VkFz.jpg" type="image\x-icon">
 
      
-
+<!-- entête -->
 </head>
-<body>
-    <header>
+<body >
+    <header class="container">
          <nav>
             <ul>
-                
+              <li><img src="../img/icone/390166.png" alt="icone" class="logo" id="soda"></li>  
             </ul>
             <ul>
-                <li><a href="index.html">Retour au menu</a></li>
+                <li><a href="../index.html">Retour au menu</a></li>
                 <li><a href="politique_confidentialite.html">Politique de confidentialité</a></li>
                 <li><a href="inscription.html">Connexion / Inscription</a></li>
-            
             </ul>
         </nav>
-        <h1><strong><mark>DrinkandCold</mark></strong></h1>
-        <h4>Site crée par Nolan De Almeida</h4>
+        <h1><strong>DrinkandCold</strong></h1>
+        <p><strong>Site créé par Nolan De Almeida</strong></p>
         <i>Be Fraîche</i>
         <hr>
+
     </header>
-    <main >
-        <h2>Soda</h2> 
-        <p>Ceci sont tous les sodas que nous vendons <u> seulement par pack de 30</u> :</p>
-        <hr> 
-
-        <h3>Le Coca-Cola :</h3>  <br>
-        <img src="../img/soda/Coca-Cola-PNG-HD-Quality.png" alt="cannete de Coca-Cola"> <br>
-        <hr>
+    <main class = "container">
 
 
-        <h3>Le Fanta :</h3>  <br>
-        <img src="../img/soda/R.png" alt="cannete de Fanta"> <br>
-        <hr>
+        <!-- Titre -->
+         <section>
+            <header>
+                <h2 class="menu_princ">Soda</h2> 
+                <p>Ceci sont tous les sodas que nous vendons <u> seulement par pack de 30</u> :</p>
+                <hr>
+            </header>
+
+            <!-- Les boissons -->
+
+            <!-- coca cola -->
+            <article>
+                <h3>Le Coca-Cola </h3>  <br>
+                <p>Nous vendons <u>deux</u> types de Coca-Cola ;</p>
+                <dl>
+                    <dt id="cola_classique">Coca classique : 
+                        <dd><img class="cola "src="../img/soda/coca.png" alt="cannete de Coca-Cola" title="Coca-Cola"> 
+                            <p class="texte_soda">C’est la référence absolue des sodas, reconnaissable entre mille par sa robe ambrée et son étiquette rouge iconique. 
+                                Sa recette, jalousement gardée, offre un équilibre parfait entre des notes de vanille, de cannelle et d’agrumes, le tout soutenu par une caféine légère qui apporte un petit coup de fouet.
+                                 En bouche, le Coca-Cola Classic se distingue par une effervescence fine mais persistante, créant une sensation de fraîcheur immédiate. C’est la boisson de partage par excellence, idéale pour
+                                  accompagner un burger ou un repas convivial, offrant une rondeur sucrée qui apaise le palais après des saveurs salées.</p>
+                        </dd>
+                    </dt>
+                    <dt>Coca zéro : 
+                        <dd><img class="cola" src="../img/soda/irvine-california-20-apr-2022-600nw-2147962431.png" alt="cannete de coca zéro" title="Coca-Cola zéro">
+                            <p class="texte_soda">Conçu pour ceux qui ne veulent pas choisir entre plaisir et équilibre, le Coca-Cola Zéro réussit l'exploit de copier le profil aromatique
+                                 de l'original sans contenir un seul gramme de sucre. Grâce à un mélange précis d'édulcorants, il conserve ce goût caramélisé et cette force gazeuse caractéristique,
+                                  mais avec une finale plus légère et moins sirupeuse en bouche. C'est l'allié parfait pour se rafraîchir tout au long de la journée sans apport calorique. Chez Migros,
+                                   il est souvent plébiscité par les sportifs ou les personnes attentives à leur consommation de sucre qui recherchent le frisson "Coke" intact.
+</p></dd>
+                    </dt>
+                </dl>
+            </article>
 
 
-        <h3>Le Sprite :</h3>  <br>
-        <img src="../img/soda/sprite_PNG98773.png" alt="cannete de Sprite"> <br>
-        <hr>       
+            <!-- fanta -->
+            <article class="fanta">
+                <h3>Le Fanta :</h3>  <br>
+                <img class="cola" src="../img/soda/fanta.png" alt="cannete de Fanta" title="Fanta"> <br>
+                <p class="texte_soda">Véritable explosion fruitée, le Fanta Orange est le soda de la bonne humeur par excellence. 
+                    Sa couleur orange vif et son parfum intense dès l'ouverture de la bouteille annoncent une boisson gourmande et très pétillante.
+                    Contrairement à d'autres sodas à l'orange, il mise sur un jus à base de concentré qui lui donne cette saveur de bonbon acidulé très appréciée des jeunes et des
+                    les en fait une boisson extrêmement désaltérante lors des journées chaudes d'été, et il laisse une note sucrée et joyeuse sur les papilles qui invite immédiatement 
+                    à une deuxième gorgée.
+                 </p>
+            </article>
 
 
-        <h3>Le Sumol :</h3>  <br>
-        <img src="../img/soda/sumol_orange_33cl_png.webp" alt="cannete de Sumol"> <br>
-        <hr>       
 
-        <h3>Le Pack spécial :</h3>  
-        <p>Pack avec 10 Fanta, 10 Coca-Cola et 10 Sprite</p><br>
-        <img src="../img/soda/OIP.webp" alt="pack sprite fanta coca"> <br>
-        <hr>  
+            <!-- sprite -->
+            <article class="fanta">
+                <h3>Le Sprite :</h3>  <br>
+                <img class="cola"  src="../img/soda/sprite_PNG98773.png" alt="cannete de Sprite" title="Sprite"> <br> 
+                <p class="texte_soda">Le Sprite se définit par sa pureté et son efficacité redoutable contre la soif. Cette boisson transparente, 
+                    aux arômes naturels de citron et de citron vert, est la plus incisive de la sélection. Son acidité est franche, propre et extrêmement rafraîchissante,
+                    sans aucune lourdeur sucrée en fin de bouche. Les bulles du Sprite sont vives et éclatantes, ce qui en fait le compagnon idéal pour nettoyer le palais. 
+                    Très polyvalent, il est aussi bien apprécié pur avec des glaçons et une tranche de citron frais que comme base neutre et citronnée pour créer des cocktails ou des mocktails maison.</p>
+  
+            </article> 
+
+
+            <!-- sumol -->
+            <article> 
+                <h3>Le Sumol :</h3>  <br>
+                <p>Nous vendons <u>deux</u> types de Sumol ;</p>
+                <dl>
+                    <dt>Sumol à l'orange : 
+                        <dd><img class="cola" src="../img/soda/sumol_orange_33cl_png.webp" alt="cannete de Sumol orange" title="Sumol à l'orange"> <br>
+                            <p class="texte_soda">Le Sumol Orange n'est pas qu'un simple soda, c'est une institution portugaise qui mise sur l'authenticité.
+                            Sa grande force réside dans sa composition : il contient de la véritable pulpe de fruit, ce qui lui donne un aspect légèrement trouble et une texture "pleine" unique.
+                            Moins gazeux que le Fanta, il privilégie le goût brut de l'orange pressée, offrant une expérience plus proche du jus de fruit pétillant que de la limonade artificielle.
+                            C'est une boisson riche, savoureuse et moins acide, qui séduit ceux qui recherchent une alternative plus naturelle et texturée dans le rayon des boissons gazeuses.</p> </dd> 
+                    </dt>
+                    <dt>Sumol à l'ananas :
+                        <dd><img class="cola" id="ananas" src="../img/soda/0006556_render_sumol_sleek_ananas_mi_gotas_png.png" alt="cannete de sumol ananas" title="Sumol à l'ananas"
+                            ><p class="texte_soda">Le Sumol Ananas est sans doute l'une des boissons les plus exotiques et addictives. Dès la première gorgée, on est transporté 
+                            par la douceur tropicale de l'ananas mûr, parfaitement équilibrée par une pétillance délicate. Comme sa version à l'orange, il contient du vrai jus, 
+                            ce qui évite le goût "chimique" souvent associé aux boissons à l'ananas. C’est une boisson solaire, très douce et onctueuse, qui se déguste presque comme un dessert. 
+                            Elle est particulièrement appréciée en accompagnement de plats épicés ou simplement pour s'offrir une parenthèse estivale à n'importe quel moment de l'année.</p></dd>
+                    </dt>
+                </dl>         
+            </article> 
+            
+
+            <!-- pack spécial -->
+            <article> 
+                <h3>Le Pack spécial :</h3>  
+                <p>Pack avec 10 Fanta, 10 Coca-Cola et 10 Sprite</p><br>
+                <div id="pack"><img  class="pack" src="../img/soda/istockphoto-477567550-612x612.jpg" alt="pack sprite fanta coca" title="Pack spécial"> <br>
+                    <p class="texte_soda">Découvrez l'assortiment ultime pour toutes vos soifs : ce pack exclusif réunit les icônes du rafraîchissement pour une expérience 
+                        gustative complète et variée. Plongez d'abord dans l'effervescence mythique du Coca-Cola Classic, avec ses notes caramélisées et son frisson unique qui 
+                        accompagne parfaitement vos repas gourmands. Enchaînez avec l'explosion fruitée du Fanta Orange, une boisson vibrante et gorgée de soleil qui apporte une 
+                        touche de fun et de gourmandise à chaque pause. Pour une sensation de pureté absolue, laissez-vous saisir par le Sprite et son duo percutant de citron et 
+                        citron vert, offrant une fraîcheur cristalline et une acidité tranchante qui nettoie instantanément le palais.Ce pack 
+                        complet, idéal pour les moments de partage et de convivialité, est disponible au prix exceptionnel de <strong>20 CHF par packs de 5 uniquement.</strong></p> 
+                </div>    
+            </article> 
+        </section>
         
-        
-        
+        <!-- prix -->
         <h3>Les prix (sans la livraison)</h3>  <br>
         <table>
             <thead>
@@ -69,24 +142,27 @@
                     <th>pack de 30 de n'importe quelle type</th>
                     <th>Type 1 avec Type 2 (15 canette chacune)</th>                    
                 </tr>
-
             </thead>
             <tbody>
+                <!-- coca -->
                 <tr>
                     <td>Coca-Cola</td>
                     <td>40 CHF</td>
                     <td>45 CHF</td>
                 </tr>
+                <!-- fanta -->
                 <tr>
                     <td>Fanta</td>
                     <td>37 CHF</td>
                     <td>-</td>
                 </tr>
+                <!-- sprite -->
                 <tr>
                     <td>Sprite</td>
                     <td>37.95 CHF</td>
                     <td>-</td>
                 </tr>
+                <!-- sumol -->
                 <tr>
                     <td>Sumol</td>
                     <td>40 CHF</td>
@@ -95,16 +171,22 @@
             </tbody>
 
         </table>
-              
-    </main>
-        <footer>
-        <br> <br> 
-        <hr>
+        <a href="#soda" id="en_haut" title="Remonter en haut">
+            <img src="../img/icone/fleche_2.png" alt="Haut">
+        </a>
 
+    </main>
+        <footer class="container">
+         
+        <hr>
         <strong>Classe :EM-IN 1A</strong> 
-        <p> Crée par Nolan De Almeida</p>
+        <p> Créé par Nolan De Almeida</p>
         
 
 
     </footer>
 </body>
+<script>
+    
+</script>
+</html>
