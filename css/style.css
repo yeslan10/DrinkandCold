@@ -1,0 +1,263 @@
+/* style de mes pages  */
+
+/* lien */
+@import url('https://fonts.googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+/* généralité */
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    border-radius: 5%;
+}
+/* VARIABLE */
+:root {
+    --primary: #9a9bdb;
+    --primary-hover: #4f46e5;
+    --transition: all 0.3s ease;
+}
+
+/* body */
+
+body {
+    background-color: #0f172a; 
+    font-family: 'Inter', sans-serif;
+}
+
+
+/* --- Header, logo  --- */
+header {
+    padding: 2rem 0;
+    text-align:left;
+}
+
+.logo {
+    max-height: 110px;
+    filter: drop-shadow(0 0 8px rgba(99, 102, 241, 0.5));
+    transition: var(--transition);
+}
+
+.logo:hover {
+    transform: rotate(13deg) scale(1.1);
+}
+
+h1{
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #818cf8, #2c094e);
+    font-size: 2rem;
+}
+
+header i {
+    color: var(--primary);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+/* menu des pages */
+.menu_princ{
+    text-align: center;
+    font-size: 2.5rem; 
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--primary);  
+}
+
+
+/* cadre image */
+.image_cadre {
+    background-color: rgb(105, 161, 207); 
+    border-radius: 20px;       
+    padding: 15px;                
+}
+
+.image_cadre_2 {
+    background-color: rgb(8, 8, 8); 
+    border-radius: 20px;       
+    padding: 15px;                        
+}
+
+.image_cadre img, .image_cadre_2 img{
+    width:100%; 
+    height: auto;
+}
+
+.article_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+/* bouton ciao kombucha et squeezie*/
+#squeezz{
+    margin-bottom:2rem ;
+    margin-right: 5px;
+}
+#CK{
+  width: 200px;
+  height: 50px;
+  padding: 15px 30px;
+  transition: transform 0.3s ease;
+
+}
+.CK:hover{
+  transform: scale(1.2);
+}
+
+/*  Soda */
+.cola{
+  width: 300px;
+  height: auto;
+  float: left;
+}
+
+.fanta{
+    height: 20rem;
+}
+
+.pack{
+    width: 30%;
+    height: auto;
+    float: left;
+    margin: 20px;
+    border-radius: 20%;
+}
+
+dt{
+    margin: 2rem;
+    clear: left;
+}
+
+#ananas{
+    width: 230px;
+    margin-left: 38px;
+}
+
+dd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texte_soda{
+    font-family: 'roboto', sans-serif;
+}
+
+.texte_soda strong{
+    color: var(--primary);
+}
+/* Soda effet image */
+.cola {
+    filter: drop-shadow(0 10px 10px rgba(245, 244, 244, 0.5));
+    transition: var(--transition);
+}
+
+.cola:hover {
+    filter: drop-shadow(0 15px 20px var(--primary));
+    transform: rotate(-5deg);
+}
+
+/* ecriture texte */
+.ecriture{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --- Articles et Cartes --- */
+article {
+    border: 1px solid #1e293b;
+    background: #1e293b ;
+    border-radius: 12px;
+    transition: var(--transition);
+    margin-bottom: 2rem;
+    
+}
+article:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+}
+
+/* formulaires */
+
+input:focus, textarea:focus{
+    box-shadow: 0 0 0 2px var(--primary) ;
+}
+/* --- Liens a --- */
+a{
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+a:hover{
+    text-decoration: underline;
+}
+
+/* table */
+table {
+    background: #1e293b;
+}
+thead th {
+    background-color: var(--primary-hover);
+    color: white; 
+}
+/* --- Footer --- */
+footer {
+    padding: 3rem 0;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer strong {
+    color: var(--primary);
+}
+
+/* icone qui va en haut */
+#en_haut{
+    position: fixed;
+    bottom: 55px; 
+    right: 25px;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%; 
+    background-color: #5049da;
+    transition: all 0.3s ease;
+
+}
+#en_haut:hover {
+    background-color: #ca0916; 
+    transform: translateY(-5px); 
+}
+
+#en_haut img {
+    width: 65px; 
+}
+
+/* js */
+
+.ins_connex{
+    margin-top: 15px;
+}
+.messageSucces{
+    display: none;
+    background: #d4edda;
+    color: #155724;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+
+
+
